@@ -1,3 +1,20 @@
+/**
+  * Queue is implemented using two stack.
+  * We take a input and an output stack.
+  * When we get an element to push, we push it into the input stack.
+  * But when we get a pop/top operation, we check if the output stack is empty or not.
+  * If the output stack is not empty then we simply return the top of the output stack.
+  * Else we take all the elements of the input stack and put it into the output stack.
+  * Now we return the top of the output stack.
+  * Since we take out from input stack and put it in output stack, we have the output stack in order of a queue.
+  * So output stack will have all the elements that are supposed to be popped or peeked.
+  * Now we have two seperate channels for output and for input.
+  * This helps in multithreading.
+  * The time complexity is O(1) for push, O(n) for pop and top.
+  * But we can say that amortized time complexity for pop and top is O(1).
+  * Because we have to move the elements once or twice for a set of pop or top operations.
+  */
+
 #include<bits/stdc++.h>
 using namespace std;
 

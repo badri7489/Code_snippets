@@ -1,4 +1,5 @@
-/** Naive approach would be to count the number of nodes in first traversal and
+/**
+  * Naive approach would be to count the number of nodes in first traversal and
   * then delete the (N - x)th node from the beginning.
   * This can be optimised to a single pass.
   * We first take a pointer ‘fast’ and move it x times.

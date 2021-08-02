@@ -1,4 +1,5 @@
-/** Naive approach would be to take a hashset and store one by one the nodes of the linked list
+/**
+  * Naive approach would be to take a hashset and store one by one the nodes of the linked list
   * and if there is a node which is already present in the hashset then we can say that a cycle is present in the linked list.
   * Time will be O(n) and space is O(n).
   * Optimal solution will be to use the fast and slow pointers.

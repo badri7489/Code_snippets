@@ -1,4 +1,5 @@
-/** We traverse both lists and store the sum in a new list.
+/**
+  * We traverse both lists and store the sum in a new list.
   * We start from the beginning of the lists and calculate the sum,
   * calculate the carry and store it in a new node.
   * Then move both lists one step and also the new node created by one list.

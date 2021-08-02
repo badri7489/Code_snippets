@@ -1,4 +1,5 @@
-/** Naive O(n * m) approach is to traverse both the lists and check which of the two are the same.
+/**
+  * Naive O(n * m) approach is to traverse both the lists and check which of the two are the same.
   * Better approach would be to use a hashset of nodes.
   * Store all the nodes of list one and traverse the other node and check if the same is present in the hashset.
   * This takes O(n) time and a space of O(n). Considering that it takes constant time to check in the hashset.

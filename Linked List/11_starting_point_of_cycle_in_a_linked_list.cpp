@@ -1,4 +1,5 @@
-/** Brute Force is to store all the nodes in a hashset and check whether a node is repeating or not,
+/**
+  * Brute Force is to store all the nodes in a hashset and check whether a node is repeating or not,
   * if yes then loop is present and starts at the repeating node.
   * Optimal solution in O(1) space is to take slow(moves 1 step) and fast(move 2 step) and check where they meet.
   * Then take fast to head and make it move one step and

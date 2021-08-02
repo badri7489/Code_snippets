@@ -1,4 +1,5 @@
-/** Brute force would be to store each node and its corresponding random node.
+/**
+  * Brute force would be to store each node and its corresponding random node.
   * Then we create a deep copy of the linked list without initializing the random pointers.
   * For the random pointers we take that hashmap into consideration and start pointing randoms with its help.
   * This takes O(n) time and O(n) space. Hence we can optimize it to better it.

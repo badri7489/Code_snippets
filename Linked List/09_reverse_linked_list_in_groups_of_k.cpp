@@ -1,4 +1,5 @@
-/** We have to reverse the linked list on groups of k and if the last group is less than k then we must leave it as it is.
+/**
+  * We have to reverse the linked list on groups of k and if the last group is less than k then we must leave it as it is.
   * We take a dummy node and point it to the head of the linked list.
   * Then for the first k elements we have to reverse the links of k - 1 elements.
   * Then this process will continue until the elements left are less than k.

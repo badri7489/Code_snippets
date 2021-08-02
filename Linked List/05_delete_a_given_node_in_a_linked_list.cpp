@@ -1,4 +1,5 @@
-/**The head of the linked list is not given.
+/**
+  * The head of the linked list is not given.
   * We just need to delete the node that is given to us.
   * The solution of this is to copy the value of the node ahead of it and point it to next->next.
   * Then we can free the next node to the given node.

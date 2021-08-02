@@ -1,4 +1,5 @@
-/** Brute force will be to go to the last node and change it to the head k times.
+/**
+  * Brute force will be to go to the last node and change it to the head k times.
   * This will be O(n * k) time complexity.
   * Optimal approach would be to directly make the kth node from the end as the head.
   * If the value of k > n(size of list) then we need to mod it with n because after every n rotation the list is the same as before.

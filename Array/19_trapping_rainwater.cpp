@@ -1,4 +1,5 @@
-/** We need to trap rainwater in between buildings.
+/**
+  * We need to trap rainwater in between buildings.
   * Basic understanding from the question is that we need to find
   * the max left and max right on both sides of a building and then take its minimum.
   * Then get the difference between the minimum and the height of the present building.

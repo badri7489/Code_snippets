@@ -1,4 +1,5 @@
-/** In DFS traversal nodes are visited at first into the depth from a source node.
+/**
+  * In DFS traversal nodes are visited at first into the depth from a source node.
   * First a source node is taken and then that node is visited,
   * then node at the next level is visited and this is recursively taken place until there are no adjacent nodes.
   * Also a visited array is taken which checks if a node is visited or not.

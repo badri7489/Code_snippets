@@ -1,4 +1,5 @@
-/** Use simple brute force to solve it.
+/**
+  * Use simple brute force to solve it.
   * It can also be done using trie.
   * For smaller test cases brute force will be better, but as the number of test cases increases trie is better.
   */

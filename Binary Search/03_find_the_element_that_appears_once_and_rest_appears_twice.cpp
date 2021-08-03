@@ -1,4 +1,5 @@
-/** The given array contains all elements twice except for one element, and the array is sorted.
+/**
+  * The given array contains all elements twice except for one element, and the array is sorted.
   * So we can apply binary search in this.
   * We know for sure that an element with frequency 1 is present.
   * There is a partition at the index where there is the single element.

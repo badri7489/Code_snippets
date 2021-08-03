@@ -1,4 +1,5 @@
-/** We will sort the array inplace.
+/**
+  * We will sort the array inplace.
   * We can do preprocessing like count the number of 0’s, 1’s and 2’s in the array.
   * Then we can loop the array and write all the values accordingly.
   * But if we want to do inplace sort without preprocessing then we can sort by pointing the values of each one of them.

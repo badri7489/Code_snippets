@@ -1,4 +1,5 @@
-/** To detect if a cycle is present in an undirected graph or not we can use bfs traversal.
+/**
+  * To detect if a cycle is present in an undirected graph or not we can use bfs traversal.
   * We traverse the nodes of the graph and mark the ones that are travelled as visited.
   * We also keep a track of the previous node while traversing the graph.
   * Then if at some point while traversing the graph we come across an adjacent node that is visited

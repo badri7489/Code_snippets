@@ -1,4 +1,5 @@
-/** Here we sort the array in ascending order.
+/**
+  * Here we sort the array in ascending order.
   * Then to count the number of coins we start from the back,
   * we subtract the value of the coins from the amount until the amount is bigger than the coin.
   * If the coin value is bigger then we go to a low value coin and carry the same process.

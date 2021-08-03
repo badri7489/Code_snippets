@@ -1,4 +1,5 @@
-/** Here to find the next permutation, there is a particular algorithm which was devised in the 1400’s.
+/**
+  * Here to find the next permutation, there is a particular algorithm which was devised in the 1400’s.
   * The time complexity comes out to be O(n) and space complexity comes out to be O(1).
   */
 

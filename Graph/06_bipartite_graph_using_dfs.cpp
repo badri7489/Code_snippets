@@ -1,4 +1,5 @@
-/** Checking if a graph is bipartite or not can also be done using DFS traversal also.
+/**
+  * Checking if a graph is bipartite or not can also be done using DFS traversal also.
   * We traverse the graph depth first, check if the adjacent nodes are colored or not.
   * If the node is not colored, we color it and recurse on that node.
   * If the node is colored, then we check if the parent node is having the same color or not,

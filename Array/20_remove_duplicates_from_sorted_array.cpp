@@ -1,4 +1,5 @@
-/** Brute force is to take an array and while traversing the given array we will store all the unique one
+/**
+  * Brute force is to take an array and while traversing the given array we will store all the unique one
   * and then return the size of the new array.
   * Optimal solution without extra space would be to use two pointers.
   * One pointer will traverse the whole array and the other will only be updated if we find a new value.

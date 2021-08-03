@@ -1,4 +1,5 @@
-/** We can simply sort(Brute) the whole array and then find the one which is duplicate and the missing one.
+/**
+  * We can simply sort(Brute) the whole array and then find the one which is duplicate and the missing one.
   * A better approach than this would be to keep track of all the numbers from 1 to N, using a map.
   * A much better approach would be to change the values to negative so
   * that we can keep a track of those who have been visited and the ones that haven't been visited.

@@ -1,4 +1,5 @@
-/** Better approach would be to take note of the rows where we need to put zeros and the same for the columns.
+/**
+  * Better approach would be to take note of the rows where we need to put zeros and the same for the columns.
   * This will be O(m + n) space complexity.
   *
   * An optimal solution would be to have this count of the zeros for rows and columns in the first row and first column

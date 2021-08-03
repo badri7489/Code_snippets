@@ -1,4 +1,5 @@
-/** In this question we need to find the next element on the right which is greater than the present element.
+/**
+  * In this question we need to find the next element on the right which is greater than the present element.
   * If no such element is present in the array on the right then it is a -1.
   * We must return an array of such elements for each value in the array.
   * This can be done by using brute force approach.

@@ -1,4 +1,5 @@
-/** Brute force for this will be to just multiply X, n times with itself.
+/**
+  * Brute force for this will be to just multiply X, n times with itself.
   * If the powers can be negative then we need to inverse the ans.
   * A slightly better approach is to take the power and if it is divisible by 2
   * then we will multiply X with itself and if not then we will multiply the ans with X.

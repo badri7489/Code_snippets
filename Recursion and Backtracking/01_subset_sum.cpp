@@ -1,4 +1,5 @@
-/** Here we need to find all the subsets and the sum of all those subsets.
+/**
+  * Here we need to find all the subsets and the sum of all those subsets.
   * To find all the subsets we need to clearly observe that it is just a matter of choice.
   * An element from the array is taken or not taken.
   * This is the reason there are 2^n elements in the power set.

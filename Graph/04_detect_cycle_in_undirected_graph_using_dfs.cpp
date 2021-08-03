@@ -1,4 +1,5 @@
-/** Cycle in a graph can also be detected using DFS traversal.
+/**
+  * Cycle in a graph can also be detected using DFS traversal.
   * We do the same, we keep track of the nodes that are visited,
   * and we also carry a parent node in each recursive call.
   * If the adjacent node is visited and it is not the same as the parent then we can say there is a cycle.

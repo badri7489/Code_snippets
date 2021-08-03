@@ -1,4 +1,5 @@
-/** If we want the topological ordering of the graph using BFS then we can use the kahn's algorithm.
+/**
+  * If we want the topological ordering of the graph using BFS then we can use the kahn's algorithm.
   * Here we keep track of the in degree of all the nodes.
   * The nodes which have indegree 0 are kept in a queue.
   * Now we loop until the queue is empty.

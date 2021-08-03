@@ -1,4 +1,5 @@
-/** Taking the idea from the above problem we can extend it to find majority elements that appear more than n/3 times.
+/**
+  * Taking the idea from the above problem we can extend it to find majority elements that appear more than n/3 times.
   * In this case, first we need to understand that there will be at most 2 majority elements.
   * So just like we did in the simpler version of the problem,
   * we take two elements as the majority element and maintain their frequency counts and

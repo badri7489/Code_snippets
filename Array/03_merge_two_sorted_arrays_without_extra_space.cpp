@@ -1,4 +1,5 @@
-/** It can be solved using brute force approach.
+/**
+  * It can be solved using brute force approach.
   * We will begin by taking an array of m + n size and then put the values of both the arrays in the new array, in a sorted order.
   * Then put the values back in the array. This method will use extra space O(n) and can be done within a time complexity of O(m + n).
   * A better approach will be using insertion sort.

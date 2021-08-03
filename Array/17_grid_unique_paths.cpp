@@ -1,4 +1,5 @@
-/** The question is to find the total number of unique paths from start of the matrix to the end.
+/**
+  * The question is to find the total number of unique paths from start of the matrix to the end.
   * This is a basic recursive question.
   * We have two choices, one is to go right, other to go down.
   * Hence we can go recursively and find the path which exists.

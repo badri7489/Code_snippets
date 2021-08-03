@@ -1,4 +1,5 @@
-/** In this question we need to reverse the sequence of the words.
+/**
+  * In this question we need to reverse the sequence of the words.
   * Ex. "the sky is blue" -> "blue is sky the"
   * This can be done using extra memory also.
   * But the optimsed solution is to do this in O(n) time and constant space.

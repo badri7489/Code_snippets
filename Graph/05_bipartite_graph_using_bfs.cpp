@@ -1,4 +1,5 @@
-/** A bipartite graph is a graph that can be coloured using only two colors,
+/**
+  * A bipartite graph is a graph that can be coloured using only two colors,
   * its adjacent nodes are supposed to be coloured with different colors.
   * This coloring of a bipartite graph can be done using BFS traversal.
   * Everything is the same as BFS, the only thing that changes is we use a color array instead of the visited array.

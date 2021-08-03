@@ -1,4 +1,5 @@
-/** We need to sort the arrival and the departure array separately.
+/**
+  * We need to sort the arrival and the departure array separately.
   * This will tell us when the next train is arriving and when a train at one of the platforms is leaving.
   * Now keeping track of the arrivals and departures by two separate pointers we will start counting the platforms.
   * If arriving train time is less than equal to the departure train time then we need one more station.

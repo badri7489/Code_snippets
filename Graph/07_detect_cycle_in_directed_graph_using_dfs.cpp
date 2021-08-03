@@ -1,4 +1,5 @@
-/** Detecting a cycle in an undirected graph is easy, but when we have a directed graph,
+/**
+  * Detecting a cycle in an undirected graph is easy, but when we have a directed graph,
   * then we need to modify the algorithm.
   * We need to check if the cycle is made by traversing in only one direction and not from two sides.
   * Because all the edges here are directed.

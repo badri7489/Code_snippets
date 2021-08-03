@@ -1,4 +1,5 @@
-/** We need to find the median of 2 sorted arrays.
+/**
+  * We need to find the median of 2 sorted arrays.
   * Median means the middle element of an array.
   * If an odd number of elements then its the element itself,
   * if even then its the half of the first and the second middle element.

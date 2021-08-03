@@ -1,4 +1,5 @@
-/** The kth permutation of n numbers from 1 to n.
+/**
+  * The kth permutation of n numbers from 1 to n.
   * We can do it linearly by using maths.
   * We know that each number will appear at the first position for a certain factorial number of times.
   * Hence we calculate that and subtract that from k, until k is not 0.

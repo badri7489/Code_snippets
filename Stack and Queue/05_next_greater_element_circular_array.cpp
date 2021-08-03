@@ -1,4 +1,5 @@
-/** This question is the same question as the next greater element.
+/**
+  * This question is the same question as the next greater element.
   * Just a slight modification is that it has a circular array.
   * So when we reach the end of the array we must not stop there, we must start from the begining of the array.
   * To solve this problem we take an imaginary duplicate array and add it at the end of the array.

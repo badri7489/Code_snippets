@@ -1,4 +1,5 @@
-/** Optimal solution would be to use Kadane’s algorithm here.
+/**
+  * Optimal solution would be to use Kadane’s algorithm here.
   * We will sum the array one element at a time and store this sum in a hashmap(sum, i),if it isn’t there.
   * But if the sum is in the hashmap then we will store the length of the subarray
   * that makes the total sum again to one of those present in the hashmap.

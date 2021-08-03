@@ -1,4 +1,5 @@
-/** This is a pretty straightforward question, if the array is sorted then it can be done easily.
+/**
+  * This is a pretty straightforward question, if the array is sorted then it can be done easily.
   * If not then we need to sort the array.
   * Then considering the first as one of the intervals that will be in the answer,
   * we will check the range of each of them one by one and merge them if overlapping,

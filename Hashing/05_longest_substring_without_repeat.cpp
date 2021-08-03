@@ -1,4 +1,5 @@
-/** We’ll use kadane’s algorithm. We take a hashset to store the elements one by one.
+/**
+  * We’ll use kadane’s algorithm. We take a hashset to store the elements one by one.
   * Keeping a left and right pointer we move the right until the array has been exhausted.
   * If at any point the right pointer points to a character which is present in the hashset
   * then we move the left pointer until the character which causes duplicacy has been removed.

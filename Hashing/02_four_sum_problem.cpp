@@ -1,4 +1,5 @@
-/** We need to find all the distinct quadruplets which give a target sum.
+/**
+  * We need to find all the distinct quadruplets which give a target sum.
   * The brute force would be to loop the array 4 times and find them and store them.
   * Then we will at the end try to find all the unique ones and give it as an answer.
   * Better approach would be to loop the array twice and then solve as a two sum question for the right part of the array.

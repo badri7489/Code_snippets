@@ -1,4 +1,5 @@
-/** We are given two sorted arrays and we need to find the kth element when both the arrays are joined and sorted.
+/**
+  * We are given two sorted arrays and we need to find the kth element when both the arrays are joined and sorted.
   * This can be done by simply using a new array of size m + n.
   * We will use the merge sort technique to put the elements in the new array.
   * This will take O(m + n) time and O(m + n) space.

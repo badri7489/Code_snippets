@@ -1,4 +1,5 @@
-/** Here in this job sequencing problem we need to have maximum profit as well we need to submit the jobs before the deadline.
+/**
+  * Here in this job sequencing problem we need to have maximum profit as well we need to submit the jobs before the deadline.
   * If a job’s deadline is on a 5th day then we can submit it from day 1 to day 5.
   * Hence To maximize the profit we sort the Job array according to the profit in descending order.
   * Then we take a deadline array of size equal to the max time deadline.

@@ -1,4 +1,5 @@
-/** Simple brute force solution for this would be O(n^3) complexity,
+/**
+  * Simple brute force solution for this would be O(n^3) complexity,
   * which is to iterate the array twice and find every subarray and find the sum and storing the maximum.
   * This can be improved to a better solution of O(n^2), which would be to calculate the sum while considering the subarray.
   *

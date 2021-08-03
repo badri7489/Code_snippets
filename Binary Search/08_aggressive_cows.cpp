@@ -1,4 +1,5 @@
-/** Farmer John has built a new long barn, with N (2 <= N <= 100,000) stalls.
+/**
+  * Farmer John has built a new long barn, with N (2 <= N <= 100,000) stalls.
   * The stalls are located along a straight line at positions x1,...,xN (0 <= xi <= 1,000,000,000).
   * His C (2 <= C <= N) cows don't like this barn layout and become aggressive towards each other once put into a stall.
   * To prevent the cows from hurting each other, FJ wants to assign the cows to the stalls,

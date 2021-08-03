@@ -1,4 +1,5 @@
-/** Brute force approach would be O(n^2) hence we should try to better it.
+/**
+  * Brute force approach would be O(n^2) hence we should try to better it.
   * Optimal approach would be to use the merge sort algorithm.
   * We will divide the array into parts and then while merging it back,
   * we will count the numbers which are on the right hand side and satisfy arr[i] <= 2 * arr[j].

@@ -1,4 +1,5 @@
-/** To maximize the profit. We sort in descending order of the to value / weight.
+/**
+  * To maximize the profit. We sort in descending order of the to value / weight.
   * Then we need to take the weights one by one.
   * If the weight is less than the knapsack then we take it as a whole otherwise we take part of it.
   * And when a situation comes that we need to take part then the knapsack is full and we should stop.

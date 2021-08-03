@@ -1,4 +1,5 @@
-/** Brute force approach would be to linearly search the array, and its time complexity would be O(n^2).
+/**
+  * Brute force approach would be to linearly search the array, and its time complexity would be O(n^2).
   * Optimal approach would be to make use of the fact that the array is sorted.
   * The matrix is sorted both row wise and column wise. We can start from the top right side of the matrix.
   * If the element to be searched is greater we will go down in that column else we will go left in that row.

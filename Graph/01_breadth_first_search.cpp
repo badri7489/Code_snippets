@@ -1,4 +1,5 @@
-/** In BFS we traverse all child nodes of a nodeand then we move forward.
+/**
+  * In BFS we traverse all child nodes of a nodeand then we move forward.
   * We keep in track of the other nodes when visiting the child nodes using a queue.
   * The edges of the graph are stored in the form of adjacency list, vector of arrays in cpp.
   * A vector of visited nodes is maintained where all the nodes that have been visited are marked.

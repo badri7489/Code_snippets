@@ -1,4 +1,5 @@
-/** Brute force approach will be to sort the array and then find the duplicate which will be of O(n * log(n)) time complexity.
+/**
+  * Brute force approach will be to sort the array and then find the duplicate which will be of O(n * log(n)) time complexity.
   * Better approach will be to use extra space.
   * We will take a map and count the occurrence of all the numbers and whose count will be more than 1 will be the imposter.
   * This will be O(n) time complexity and O(n) space complexity.

@@ -1,4 +1,5 @@
-/** The elements of the array are sorted and then rotated some number of times.
+/**
+  * The elements of the array are sorted and then rotated some number of times.
   * We need to search an element in the array in O(log(n)) time.
   * We apply normal binary search in the array.
   * We find the mid, check if that's the target, if not then we check which side of the array is sorted

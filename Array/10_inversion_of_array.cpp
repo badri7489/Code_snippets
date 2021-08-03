@@ -1,4 +1,5 @@
-/** Here,inversion count is the number of pairs where i < j and arr[i] > arr[j].
+/**
+  * Here,inversion count is the number of pairs where i < j and arr[i] > arr[j].
   * It could be done using mergesort. During merging of the two halves,
   * if the smaller element belongs to second half then increase the inv_count by
   * mid - i , which is the count of pairs that could be made with that jth element.

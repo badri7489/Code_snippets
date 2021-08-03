@@ -1,4 +1,5 @@
-/** We need to find the element which has more than floor of n / 2 appearances.
+/**
+  * We need to find the element which has more than floor of n / 2 appearances.
   * Brute force would be to take an element and count its occurrences, and keep on doing for the rest.
   * This will be an O(n * 2) time complexity algorithm.
   * Better approach would be to sort the array and find the one with majority count by linearly traversing the array.

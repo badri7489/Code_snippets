@@ -1,7 +1,7 @@
 /**
   * It can be solved using brute force approach.
   * We will begin by taking an array of m + n size and then put the values of both the arrays in the new array, in a sorted order.
-  * Then put the values back in the array. This method will use extra space O(n) and can be done within a time complexity of O(m + n).
+  * Then put the values back in the array. This method will use extra space O(n + m) and can be done within a time complexity of O(m + n).
   * A better approach will be using insertion sort.
   * Both the arrays are sorted so we can check individual numbers from one array and compare with the other array.
   * Then swap them accordingly and after that we can insertion sort the other array so that it is sorted again.

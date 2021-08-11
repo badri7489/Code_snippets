@@ -1,7 +1,7 @@
 /**
   * Brute force will cause Time Limit Exceeded error will come.
   * Use Seive of Erasthones method is used.
-  * Time complexity will reduce to O(n * log(n) * log(n)).
+  * Time complexity will reduce to O(n * log(log(n))).
   */
 
 #include<bits/stdc++.h>

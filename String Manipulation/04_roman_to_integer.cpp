@@ -14,7 +14,7 @@
 using namespace std;
 
 int romanToInt(string s) {
-    int roman[24];
+    int roman[26];
     roman['I' - 'A'] = 1;
     roman['V' - 'A'] = 5;
     roman['X' - 'A'] = 10;
@@ -22,13 +22,12 @@ int romanToInt(string s) {
     roman['C' - 'A'] = 100;
     roman['D' - 'A'] = 500;
     roman['M' - 'A'] = 1000;
-    int result = 0;
-    for (int i = s.length() - 1; i >= 0; i--) {
-        result += roman[s[i] - 'A'];
-        if (i != 0 && roman[s[i] - 'A'] > roman[s[i - 1] - 'A']) {
-            result -= roman[s[i - 1] - 'A'];
-            i--;
-        }
+    int ans = 0;
+    for (int i = 0; i < s.length(); i++) {
+        if (i == s.length() - 1 || roman[s[i] - 'A'] >= roman[s[i + 1] - 'A'])
+            ans += roman[s[i] - 'A'];
+        else
+            ans -= roman[s[i] - 'A'];
     }
-    return result;
+    return ans;
 }

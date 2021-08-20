@@ -66,3 +66,18 @@ vector<int> leftView(TreeNode* root) {
     }
     return ans;
 }
+
+// Recursive Method
+void helper(TreeNode* root, int level, vector<int>& res) {
+    if (!root)
+        return;
+    if (res.size() < level)
+        res.push_back(root->val);
+    helper(root->left, level + 1, res);
+    helper(root->right, level + 1, res);
+}
+vector<int> leftView(TreeNode* root) {
+    vector<int> res;
+    helper(root, 1, res);
+    return res;
+}

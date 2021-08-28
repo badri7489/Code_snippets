@@ -27,3 +27,14 @@ int numTrees(int n) {
     }
     return res / (n + 1);
 }
+
+// When the number of nodes is more than 19, because of which the integer value starts to overflow.
+int numTrees(int n) {
+    vector<int> ans(n + 1, 0);
+    ans[0] = ans[1] = 1;
+    for (int i = 2; i <= n; i++) {
+        for (int j = 0; j < i; j++)
+            ans[i] = (ans[i] + 1LL * (ans[j] % 1000000007) * (ans[i - j - 1] % 1000000007)) % 1000000007;
+    }
+    return ans[n] % 1000000007;
+}

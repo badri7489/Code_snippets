@@ -7,6 +7,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+// Using DP.
 int numTrees(int n) {
     vector<int> ans(n + 1, 0);
     ans[0] = ans[1] = 1;
@@ -15,4 +16,14 @@ int numTrees(int n) {
             ans[i] += ans[j] * ans[i - j - 1];
     }
     return ans[n];
+}
+
+// Binomial Formula.
+int numTrees(int n) {
+    long int res = 1;
+    for (int i = 0; i < n; ++i) {
+        res *= (2 * n - i);
+        res /= (i + 1);
+    }
+    return res / (n + 1);
 }

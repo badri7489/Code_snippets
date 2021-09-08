@@ -34,7 +34,7 @@ bool bipartiteBfs(int src, vector<int> adj[], vector<int>& color) {
 }
 bool isBipartite(int n, vector<int> adj[]) {
     vector<int> color(n, -1);
-    for (int i = 0;i < n;i++) {
+    for (int i = 0; i < n; i++) {
         if (color[i] == -1) {
             if (!bipartiteBfs(i, adj, color))
                 return false;

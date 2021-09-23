@@ -65,7 +65,7 @@ vector<string> findPrefixes(string arr[], int n) {
 int main() {
     int n;
     fstream file;
-    file.open("15_test_cases.txt");
+    file.open("02_test_cases.txt");
     file >> n;
     while (n != -1) {
         string arr[n];

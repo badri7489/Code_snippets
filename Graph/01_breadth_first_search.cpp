@@ -38,3 +38,19 @@ vector<int> bfsOfGraph(int v, vector<int> adj[]) {
     }
     return bfs;
 }
+
+// Without the use of queue.
+vector<int> bfsOfGraph(int v, vector<int> adj[]) {
+    vector<int> bfs, vis(v, 0);
+    vis[0] = 1;
+    bfs.push_back(0);
+    for (int i = 0; i < bfs.size(); i++) {
+        for (int j : adj[bfs[i]]) {
+            if (!vis[j]) {
+                bfs.push_back(j);
+                vis[j] = 1;
+            }
+        }
+    }
+    return bfs;
+}

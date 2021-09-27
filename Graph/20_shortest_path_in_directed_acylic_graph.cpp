@@ -28,10 +28,13 @@ vector<int> shortest_path_to_all_nodes(vector<pair<int, int>> adj[], int n, int 
     while (!stk.empty()) {
         int node = stk.top();
         stk.pop();
-        for (pair<int, int> it : adj[node]) {
-            // Checking the weights accordingly and filling the distance array with the minimum distance.
-            if (dist[node] + it.second < dist[it.first])
-                dist[it.first] = dist[node] + it.second;
+        // If the node has been reached previously, then only we can visit its adjacent vertices.
+        if (dist[node] != 1e9) {
+            for (pair<int, int> it : adj[node]) {
+                // Checking the weights accordingly and filling the distance array with the minimum distance.
+                if (dist[node] + it.second < dist[it.first])
+                    dist[it.first] = dist[node] + it.second;
+            }
         }
     }
     return dist;

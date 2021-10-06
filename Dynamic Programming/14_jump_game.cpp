@@ -41,7 +41,7 @@ bool canJump(vector<int>& nums) {
 bool canJump(vector<int>& nums) {
     int n = nums.size(), farthest = 0;
     for (int i = 0; i < n; i++) {
-        if (farthest < i)   // If at any point the index is less than out farthest reach we can't reach the end.
+        if (farthest < i)   // If at any point the index is less than our farthest reach we can't reach the end.
             return false;
         farthest = max(i + nums[i], farthest);  // The farthest index we can reach.
     }

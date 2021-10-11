@@ -51,3 +51,27 @@ vector<int> postorderTraversal(TreeNode* root) {
     }
     return ans;
 }
+
+// Iterative Code, reversing modified preorder traversal.
+class Solution {
+public:
+    vector<int> postorderTraversal(TreeNode* root) {
+        if (!root)
+            return {};
+        vector<int> ans;
+        stack<TreeNode*> stk;
+        stk.push(root);
+        TreeNode* temp;
+        while (!stk.empty()) {
+            temp = stk.top();
+            stk.pop();
+            ans.push_back(temp->val);
+            if (temp->left)
+                stk.push(temp->left);
+            if (temp->right)
+                stk.push(temp->right);
+        }
+        reverse(ans.begin(), ans.end());
+        return ans;
+    }
+};

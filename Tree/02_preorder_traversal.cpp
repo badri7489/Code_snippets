@@ -41,3 +41,29 @@ vector<int> preorderTraversal(TreeNode* root) {
     }
     return ans;
 }
+
+// Iterative Solution
+// We push from the right side so the right side is at the bottom and we get all the left
+// and when we empty the stack, we get the left visited and we can now visit the right.
+// Same goes very well with n-ary pre order traversal.
+class Solution {
+public:
+    vector<int> preorderTraversal(TreeNode* root) {
+        if (!root)
+            return {};
+        vector<int> ans;
+        stack<TreeNode*> stk;
+        TreeNode* curr;
+        stk.push(root);
+        while (!stk.empty()) {
+            curr = stk.top();
+            stk.pop();
+            ans.push_back(curr->val);
+            if (curr->right)
+                stk.push(curr->right);
+            if (curr->left)
+                stk.push(curr->left);
+        }
+        return ans;
+    }
+};

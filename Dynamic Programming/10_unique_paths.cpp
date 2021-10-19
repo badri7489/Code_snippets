@@ -1,4 +1,5 @@
-#include<bits/stdc++.h>
+#include<iostream>
+#include<vector>
 using namespace std;
 
 // Since the robot can only move right and down, when it arrives at a point, it either arrives from left or above. 
@@ -38,3 +39,18 @@ int uniquePaths(int m, int n) {
     }
     return dp[n - 1];
 }
+
+// There is a shortcut to find the number of paths, using combinatorics.
+class Solution {
+public:
+    int uniquePaths(int m, int n) {
+        m = m - 1, n = n - 1;
+        int maxi = max(m, n), mini = min(m, n);
+        long long ans = 1;
+        for (int i = m + n, j = 1; i > maxi && j <= mini; i--, j++) {
+            ans *= i;
+            ans /= j;
+        }
+        return ans;
+    }
+};

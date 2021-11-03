@@ -34,3 +34,19 @@ public:
         return ans;
     }
 };
+
+class Solution {
+private:
+    int helper(TreeNode* root, int num) {
+        if (!root)
+            return 0;
+        num = num * 10 + root->val;
+        if (!root->left && !root->right)    // When we reach leaf, we add answer.
+            return num;
+        return helper(root->left, num) + helper(root->right, num);  // Going left and right with the ans and add.
+    }
+public:
+    int sumNumbers(TreeNode* root) {
+        return helper(root, 0);
+    }
+};

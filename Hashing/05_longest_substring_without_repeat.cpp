@@ -27,3 +27,28 @@ int lengthOfLongestSubstring(string s) {
     }
     return len;
 }
+
+// Time Complexity: O(2 * n)
+// Space Complexity: O(n)
+class Solution {
+public:
+    int lengthOfLongestSubstring(string s) {
+        unordered_map<char, int> mp;
+        int i = 0, j = 0, n = s.length(), ans = 0;
+        while (i < n) {
+            mp[s[i]]++;
+            if (mp.size() < i - j + 1) {    // If window size is more than the size of the map.
+                while (mp.size() < i - j + 1) { // Remove characters till they are same.
+                    mp[s[j]]--;
+                    if (mp[s[j]] == 0)  // Remove characters
+                        mp.erase(s[j]);
+                    j++;
+                }
+            } else {
+                ans = max(ans, i - j + 1);
+            }
+            i++;
+        }
+        return ans;
+    }
+};

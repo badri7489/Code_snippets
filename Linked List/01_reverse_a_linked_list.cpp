@@ -35,3 +35,14 @@ ListNode* reverseList(ListNode* head) {
     head->next = NULL;
     return temp;
 }
+
+ListNode* reverseList(ListNode* head) {
+    ListNode* prev = NULL, * curr = head;
+    while (curr) {
+        head = head->next;
+        curr->next = prev;
+        prev = curr;
+        curr = head;
+    }
+    return prev;
+}

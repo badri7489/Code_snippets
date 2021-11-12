@@ -15,16 +15,16 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int findDuplicate(vector<int>& nums) {
-    int slow = 0, fast = 0;
+int findDuplicate(vector<int>& arr) {
+    int slow = arr[0], fast = arr[0];
     do {
-        slow = nums[slow];
-        fast = nums[nums[fast]];
+        slow = arr[slow];
+        fast = arr[arr[fast]];
     } while (slow != fast);
-    slow = 0;
+    slow = arr[0];
     while (slow != fast) {
-        slow = nums[slow];
-        fast = nums[fast];
+        slow = arr[slow];
+        fast = arr[fast];
     }
-    return nums[slow];
+    return slow;
 }

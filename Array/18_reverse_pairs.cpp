@@ -12,43 +12,50 @@
   * Space complexity will be O(n).
   */
 
-#include <bits/stdc++.h>
+#include<iostream>
+#include<vector>
 using namespace std;
 
-int merge(vector<int>& arr, int low, int mid, int high) {
-    int count = 0, j = mid + 1;
-    for (int i = low; i <= mid; i++) {
-        while (j <= high && arr[i] > 2LL * arr[j])
-            j++;
-        count += (j - (mid + 1));
-    }
+class Solution {
+private:
+    long long inv_count = 0;
     vector<int> temp;
-    int left = low, right = mid + 1;
-    while (left <= mid && right <= high) {
-        if (arr[left] < arr[right])
-            temp.push_back(arr[left++]);
-        else
-            temp.push_back(arr[right++]);
-    }
-    while (left <= mid)
-        temp.push_back(arr[left++]);
-    while (right <= high)
-        temp.push_back(arr[right++]);
-    for (int i = low; i <= high; i++)
-        arr[i] = temp[i - low];
-    return count;
-}
 
-int mergeSort(vector<int>& arr, int low, int high) {
-    if (low >= high)
-        return 0;
-    int mid = (low + high) / 2;
-    int inv = 0;
-    inv += mergeSort(arr, low, mid);
-    inv += mergeSort(arr, mid + 1, high);
-    inv += merge(arr, low, mid, high);
-    return inv;
-}
-int reversePairs(vector<int>& nums) {
-    return mergeSort(nums, 0, nums.size() - 1);
-}
+    void merge(vector<int>& arr, int l, int m, int r) {
+        int i = l, j = m + 1, k = l;
+        for (; i <= m; i++) {
+            while (j <= r && arr[i] > 2LL * arr[j])
+                j++;
+            inv_count += (j - (m + 1));
+        }
+        i = l, j = m + 1;
+        while (i <= m && j <= r) {
+            if (arr[i] <= arr[j])
+                temp[k++] = arr[i++];
+            else {
+                temp[k++] = arr[j++];
+            }
+        }
+        while (i <= m)
+            temp[k++] = arr[i++];
+        while (j <= r)
+            temp[k++] = arr[j++];
+        for (i = l; i <= r; i++)
+            arr[i] = temp[i];
+    }
+
+    void mergeSort(vector<int>& arr, int l, int r) {
+        if (l < r) {
+            int m = l + (r - l) / 2;
+            mergeSort(arr, l, m);
+            mergeSort(arr, m + 1, r);
+            merge(arr, l, m, r);
+        }
+    }
+public:
+    int reversePairs(vector<int>& arr) {
+        temp.resize(arr.size());
+        mergeSort(arr, 0, arr.size() - 1);
+        return inv_count;
+    }
+};

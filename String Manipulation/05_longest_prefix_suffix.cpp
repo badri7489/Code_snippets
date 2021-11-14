@@ -23,3 +23,25 @@ int lps(string s) {
     }
     return arr[s.length()];
 }
+
+class Solution {
+public:
+    int lps(string s) {
+        int n = s.length(), index = 0, ans = 0;
+        vector<int> arr(n, 0);
+        for (int i = 1; i < n;) {
+            if (s[i] == s[index]) { // if equal then we store the increased index
+                arr[i] = ++index;
+                i++;
+            } else {
+                if (index != 0) // if index is not the beginning then we check just before element
+                    index = arr[index - 1];
+                else    // else we put that as 0
+                    arr[i++] = 0;
+            }
+        }
+        for (int i : arr)
+            ans = max(ans, i);
+        return ans;
+    }
+};

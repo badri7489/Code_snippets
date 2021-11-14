@@ -45,3 +45,23 @@ public:
         return head;
     }
 };
+
+// O(n) time code, not mine
+class Solution {
+public:
+    ListNode* deleteDuplicates(ListNode* head) {
+        ListNode* dummy = new ListNode(0, head);    // Predecessor node
+        ListNode* prev = dummy;
+        while (head) {
+            if (head->next && head->val == head->next->val) {   // If there is a next node and they are equal.
+                while (head->next && head->val == head->next->val)  // Skip all the node in between.
+                    head = head->next;
+                prev->next = head->next;    // Join the previous not duplicate with the next of all the duplicates
+            } else {
+                prev = prev->next;  // If not equal simply take the node into consideration using prev
+            }
+            head = head->next;  // Move the head ahead
+        }
+        return dummy->next;
+    }
+};

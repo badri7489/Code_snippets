@@ -31,3 +31,33 @@ int largestRectangleArea(vector<int>& heights) {
     }
     return maxArea;
 }
+
+// Two Pass, O(3n) space solution
+class Solution {
+public:
+    int largestRectangleArea(vector<int>& arr) {
+        int n = arr.size();
+        stack<int> stk;
+        vector<int> left(n, 0);
+        vector<int> right(n, n - 1);
+        for (int i = 0; i < n; i++) {
+            while (!stk.empty() && arr[stk.top()] >= arr[i])
+                stk.pop();
+            if (!stk.empty())
+                left[i] = stk.top() + 1;
+            stk.push(i);
+        }
+        while (!stk.empty())
+            stk.pop();
+        int ans = 0;
+        for (int i = n - 1; i >= 0; i--) {
+            while (!stk.empty() && arr[stk.top()] >= arr[i])
+                stk.pop();
+            if (!stk.empty())
+                right[i] = stk.top() - 1;
+            stk.push(i);
+            ans = max(ans, (right[i] - left[i] + 1) * arr[i]);
+        }
+        return ans;
+    }
+};

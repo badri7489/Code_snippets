@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/binary-watch/
+
 #include<iostream>
 #include<bitset>
 #include<vector>

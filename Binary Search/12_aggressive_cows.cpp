@@ -23,6 +23,7 @@
   * N time for checking if it is possible to place all the cows or not.
   */
 
+// Problem link : https://www.spoj.com/problems/AGGRCOW/
 #include<bits/stdc++.h>
 using namespace std;
 

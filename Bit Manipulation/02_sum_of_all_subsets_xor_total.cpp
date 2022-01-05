@@ -28,6 +28,10 @@
   * we can use a trick that is simply take the OR of all such values and multiply with 2^(n-1)
   */
 
+
+// https://leetcode.com/problems/sum-of-all-subset-xor-totals/
+
+
 #include<bits/stdc++.h>
 using namespace std;
 

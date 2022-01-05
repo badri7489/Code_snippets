@@ -8,6 +8,8 @@
   * Time complexity of this solution is O(n * log (M*(10^d)) where d = no. of decimal places.
   */
 
+// Problem link : https://practice.geeksforgeeks.org/problems/find-nth-root-of-m5843/1/
+
 #include<bits/stdc++.h>
 using namespace std;
 

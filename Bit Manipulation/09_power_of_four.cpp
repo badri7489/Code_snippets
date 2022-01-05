@@ -6,6 +6,8 @@
   *     therefore either (2^n-1) or (2^n+1) must be a multiple of 3, hence 4^n-1 must be a multiple of 3 as well.
   */
 
+// https://leetcode.com/problems/power-of-four/
+
 #include<iostream>
 using namespace std;
 

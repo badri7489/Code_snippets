@@ -8,9 +8,9 @@ int search(int arr[],int n,int x)
         int mid = (l+r)>>1;
         if(arr[mid]==x) 
             return mid;
-        else if(mid-1>=l && arr[mid-1]==target)
+        else if(mid-1>=l && arr[mid-1]==x)
             return mid-1;
-        else if(mid+1<n && arr[mid+1]==target)
+        else if(mid+1<n && arr[mid+1]==x)
             return mid+1;
         else if(arr[mid] > x)
             r = mid - 2;

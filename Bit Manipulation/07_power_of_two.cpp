@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/power-of-two/
+
 #include<iostream>
 using namespace std;
 

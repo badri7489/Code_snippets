@@ -6,6 +6,8 @@
   * We will be decreasing the powers by 2 if divisible by 2 else decrease by 1.
   */
 
+// https://leetcode.com/problems/powx-n/
+
 #include <bits/stdc++.h>
 using namespace std;
 

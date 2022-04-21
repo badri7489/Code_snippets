@@ -14,6 +14,8 @@
   * Hence this algorithm takes O((m + n) * log(m + n).
   */
 
+// https://practice.geeksforgeeks.org/problems/merge-two-sorted-arrays-1587115620/1
+
 #include <bits/stdc++.h>
 using namespace std;
 

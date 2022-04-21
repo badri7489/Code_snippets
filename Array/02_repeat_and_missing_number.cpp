@@ -7,6 +7,8 @@
   * The repeating one will have the negative value in the array at ith position.
   */
 
+ // https://leetcode.com/problems/missing-number/
+
 #include <bits/stdc++.h>
 using namespace std;
 

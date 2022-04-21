@@ -2,6 +2,8 @@
   * Pascal’s Triangle is a simple recursion algorithm. Time complexity is O(n^2).
   */
 
+ // https://leetcode.com/problems/pascals-triangle/
+
 #include <bits/stdc++.h>
 using namespace std;
 

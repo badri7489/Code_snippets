@@ -30,10 +30,10 @@ ListNode* reverseList(ListNode* head) {
 ListNode* reverseList(ListNode* head) {
     if (!head || !head->next)
         return head;
-    ListNode* temp = reverseList(head->next);
-    head->next->next = head;
-    head->next = NULL;
-    return temp;
+    ListNode* temp = reverseList(head->next); // Temp goes to the end and contains the head, or the last node.
+    head->next->next = head; // Circles the linked list.
+    head->next = NULL;  // Then removes the circle.
+    return temp; // Returns the head of the linked list in all the function calls.
 }
 
 ListNode* reverseList(ListNode* head) {
@@ -45,4 +45,16 @@ ListNode* reverseList(ListNode* head) {
         curr = head;
     }
     return prev;
+}
+
+// Taking the current and the previous pointer.
+ListNode* helper(ListNode* curr, ListNode* prev) {
+    if (!curr)
+        return prev;
+    ListNode* temp = helper(curr->next, curr);  // Temp goes to the end and contains the head, or the last node.
+    curr->next = prev;
+    return temp; // Returns the head of the linked list in all the function calls.
+}
+ListNode* reverseList(ListNode* head) {
+    return helper(head, NULL);
 }
